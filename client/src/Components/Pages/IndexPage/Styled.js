@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { lg, sm } from "../../../BreakPoints";
 
 export const Container = styled.div`
-  background: linear-gradient(rgb(234, 230, 255), rgb(255, 255, 255)) no-repeat;
+  background: linear-gradient(rgb(3, 252, 161), rgb(255, 255, 255)) no-repeat;
   color: rgb(9, 30, 66);
   width: 100%;
   display: flex;
@@ -35,7 +35,7 @@ export const LeftWrapper = styled.div`
   width: 39rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-left;
   ${sm({
     width: "19rem",
     alignItems: "center",
@@ -94,9 +94,9 @@ export const RightSide = styled.div`
 `;
 
 export const SvgItem = styled.img`
-  width: 400.5px;
+  width: 600.5px;
   aspect-ratio: auto 465.5 / 602.5;
-  height: 540.5px;
+  height: 440.5px;
 
   ${lg({
     width: "300px",
