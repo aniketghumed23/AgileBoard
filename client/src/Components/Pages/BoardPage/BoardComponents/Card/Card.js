@@ -75,7 +75,7 @@ const Card = (props) => {
               color={!card.cover.isSizeOne ? card.cover.color : "#fff"}
               padding={card.cover.color && card.cover.isSizeOne}
             >
-              {card.cover.isSizeOne && <Cover color={card.cover.color} />}
+              {/* {card.cover.isSizeOne && <Cover color={card.cover.color} />} */}
               {labels && (
                 <LabelContainer>
                   {labels.map((label) => {
@@ -93,12 +93,12 @@ const Card = (props) => {
                         <FollowIcon fontSize="0.5rem" />
                       </IconWrapper>
                     )}
-                    {card.attachments.length > 0 && (
+                    {/* {card.attachments.length > 0 && (
                       <AttachmentContainer>
                         <AttachmentIcon fontSize="small" />
                         <Span>{card.attachments.length}</Span>
                       </AttachmentContainer>
-                    )}
+                    )} */}
 
                     {(card.date.dueDate || card.date.startDate) && ( //#ec9488, #eb5a46 #61bd4f
                       <DateContainer
@@ -162,21 +162,21 @@ const Card = (props) => {
                         }`}</Span>
                       </DateContainer>
                     )}
-                    {card.description && <DescriptiondIcon fontSize="0.5rem" />}
+                    {/* {card.description && <DescriptiondIcon fontSize="0.5rem" />}
                     {comment > 0 && (
                       <CommentContainer>
                         <CommentIcon fontSize="0.5rem" />
                         <Span>{comment}</Span>
                       </CommentContainer>
-                    )}
-                    {card.checklists.length > 0 && (
+                    )} */}
+                    {/* {card.checklists.length > 0 && (
                       <CheckContainer>
                         <CheckIcon fontSize="0.5rem" />
                         <Span>
                           {checks.c}/{checks.c + checks.n}
                         </Span>
                       </CheckContainer>
-                    )}
+                    )} */}
                   </IconGroupWrapper>
                 </IconGroupContainer>
                 {card.members && (

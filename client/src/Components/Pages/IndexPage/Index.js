@@ -16,8 +16,8 @@ import {
 const Index = () => {
   let history = useHistory();
   useEffect(() => {
-    document.title = "Trello Clone"
-  }, [])
+    document.title = "Trello Clone";
+  }, []);
   return (
     <>
       <IndexNav />
