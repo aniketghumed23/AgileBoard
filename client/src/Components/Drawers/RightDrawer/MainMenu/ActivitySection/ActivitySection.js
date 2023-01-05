@@ -17,7 +17,7 @@ import {
 } from "./styled";
 import moment from "moment";
 import { activityUpdate } from "../../../../../Services/boardService";
-import CardLoadingSvg from "../../../../../Images/loading2.gif";
+import CardLoadingSvg from "../../../../../Images/loading5.svg";
 
 const ActivitySection = () => {
   const board = useSelector((state) => state.board);

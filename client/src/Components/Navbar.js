@@ -5,7 +5,7 @@ import SearchBar from "./SearchBar";
 import { xs } from "../BreakPoints";
 import ProfileBox from "./ProfileBox";
 import { useHistory } from "react-router-dom";
-import AgileBoardImage from "../Images/agileboard10.png";
+import AgileBoardImage from "../Images/agileboard12.svg";
 
 const Container = styled.div`
   height: 3rem;
@@ -52,11 +52,13 @@ const RightSide = styled.div`
 const LogoContainer = styled.div`
   display: flex;
   align-items: center;
+  width: 13vw;
 `;
 
-const TrelloLogo = styled.img`
-  width: 75px;
-  height: 15px;
+const AgileBoardLogo = styled.img`
+  width: 15vw;
+  height: 20vh;
+  margin-left: 1rem;
   cursor: pointer;
 `;
 
@@ -77,7 +79,7 @@ const Navbar = (props) => {
     <Container>
       <LeftSide>
         <LogoContainer>
-          <TrelloLogo
+          <AgileBoardLogo
             onClick={() => {
               history.push("/boards");
             }}

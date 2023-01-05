@@ -10,26 +10,31 @@ export const BgContainer = styled.div`
 
 export const Container = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 67vh;
+  background: linear-gradient(rgb(3, 252, 161), rgb(255, 255, 255)) no-repeat;
   ${md({
     backgroundColor: "#F9FAFC",
   })}
 `;
 export const TrelloIconContainer = styled.div`
+  margin-bottom: 10px;
   cursor: pointer;
-  padding-top: 2.5rem;
+  padding-top: 0.1rem;
+  height: 30vh;
+
   ${md({
-    paddingTop: "1rem",
+    paddingTop: "0.1rem",
   })}
 `;
 export const Icon = styled.img`
   display: block;
-  height: 2.6rem;
-  margin-left: auto;
+  height: 15rem;
+  width: 39rem;
+  margin-left: 32rem;
   margin-right: auto;
-  margin-bottom: 2.5rem;
+  margin-bottom: 0.1rem;
   ${md({
-    marginBottom: "1rem",
+    marginBottom: "0.1rem",
   })}
 `;
 export const FormSection = styled.section`
@@ -44,7 +49,7 @@ export const FormCard = styled.div`
   margin: 0 auto;
   position: relative;
   background-color: #ffffff;
-  border-radius: 3px;
+  border-radius: 1px;
   padding: 1.5rem 2.5rem;
   box-shadow: rgb(0 0 0 / 10%) 0 0 10px;
 

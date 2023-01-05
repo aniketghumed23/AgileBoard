@@ -2,7 +2,7 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 import styled from "styled-components";
 import { lg } from "../BreakPoints";
-import trelloLogo from "../Images/agileboard11.svg";
+import AgileBoardLogo from "../Images/agileboard12.svg";
 const Container = styled.nav`
   position: fixed;
   top: 0;
@@ -56,7 +56,7 @@ const IndexNav = () => {
   let history = useHistory();
   return (
     <Container>
-      <Icon src={trelloLogo} />
+      <Icon src={AgileBoardLogo} />
       <RightSide>
         <Link onClick={() => history.push("/login")}>Log in</Link>
         <Button onClick={() => history.push("/register")}>Sign up</Button>

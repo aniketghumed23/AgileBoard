@@ -5,7 +5,7 @@ import AddToCard from "./AddToCard/AddToCard";
 import Description from "./Description/Description";
 import Features from "./Features/Features";
 import Title from "./Title/Title";
-import CardLoadingSvg from "../../../Images/loading2.gif";
+import CardLoadingSvg from "../../../Images/loading5.svg";
 import { getCard } from "../../../Services/cardService";
 import { useSelector, useDispatch } from "react-redux";
 import CloseIcon from "@mui/icons-material/Close";

@@ -10,7 +10,8 @@ export const BgContainer = styled.div`
 
 export const Container = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 60vh;
+  background: linear-gradient(rgb(3, 252, 161), rgb(255, 255, 255)) no-repeat;
   ${md({
     backgroundColor: "#F9FAFC",
   })}
@@ -18,16 +19,18 @@ export const Container = styled.div`
 export const TrelloIconContainer = styled.div`
   cursor: pointer;
   padding-top: 2.5rem;
+  height: 35vh;
   ${md({
     paddingTop: "1rem",
   })}
 `;
 export const Icon = styled.img`
   display: block;
-  height: 2.6rem;
-  margin-left: auto;
+  height: 15rem;
+  width: 39rem;
+  margin-left: 32rem;
   margin-right: auto;
-  margin-bottom: 2.5rem;
+  margin-bottom: 0.1rem;
   ${md({
     marginBottom: "1rem",
   })}

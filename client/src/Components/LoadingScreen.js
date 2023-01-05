@@ -1,7 +1,7 @@
 import * as React from "react";
 import Backdrop from "@mui/material/Backdrop";
 import styled from "styled-components";
-import CardLoadingGif from "../Images/loading2.gif";
+import CardLoadingGif from "../Images/loading5.svg";
 
 const Icon = styled.img`
   width: 10vw;
