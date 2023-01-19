@@ -16,7 +16,7 @@ export const Container = styled.div`
     backgroundColor: "#F9FAFC",
   })}
 `;
-export const TrelloIconContainer = styled.div`
+export const AgileBoardIconContrainer = styled.div`
   cursor: pointer;
   padding-top: 2.5rem;
   height: 35vh;

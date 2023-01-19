@@ -8,7 +8,7 @@ import styledComponent from "styled-components";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router";
 import { getBoards } from "../Services/boardsService";
-import CardLoadingSvg from "../Images/loading2.gif";
+import CardLoadingSvg from "../Images/loading5.svg";
 
 const BootstrapButton = styled(Button)({
   boxShadow: "none",

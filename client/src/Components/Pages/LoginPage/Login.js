@@ -9,7 +9,7 @@ import AgileBoardLogo from "../../../Images/agileboard12.svg";
 import {
   BgContainer,
   Container,
-  TrelloIconContainer,
+  AgileBoardIconContrainer,
   FormSection,
   FormCard,
   Form,
@@ -42,9 +42,9 @@ const Login = () => {
         <Background />
       </BgContainer>
       <Container>
-        <TrelloIconContainer onClick={() => history.push("/")}>
+        <AgileBoardIconContrainer onClick={() => history.push("/")}>
           <Icon src={AgileBoardLogo} />
-        </TrelloIconContainer>
+        </AgileBoardIconContrainer>
         <FormSection>
           <FormCard>
             <Form onSubmit={(e) => handleSubmit(e)}>
