@@ -3,10 +3,12 @@ import { useHistory } from "react-router-dom";
 import Background from "../../Background";
 import { register } from "../../../Services/userService";
 import { useDispatch, useSelector } from "react-redux";
+import AgileBoardLogo from "../../../Images/agileboard12.svg";
+
 import {
   BgContainer,
   Container,
-  TrelloIconContainer,
+  AgileBoardIconContrainer,
   FormSection,
   FormCard,
   Form,
@@ -33,8 +35,8 @@ const Register = () => {
   });
 
   useEffect(() => {
-    document.title = "Create a Trello Account"
-  }, [])
+    document.title = "Create a AgileBoard Account";
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -47,9 +49,9 @@ const Register = () => {
         <Background />
       </BgContainer>
       <Container>
-        <TrelloIconContainer onClick={() => history.push("/")}>
-          <Icon src="https://d2k1ftgv7pobq7.cloudfront.net/meta/c/p/res/images/trello-header-logos/167dc7b9900a5b241b15ba21f8037cf8/trello-logo-blue.svg" />
-        </TrelloIconContainer>
+        <AgileBoardIconContrainer onClick={() => history.push("/")}>
+          <Icon src={AgileBoardLogo} />
+        </AgileBoardIconContrainer>
         <FormSection>
           <FormCard>
             <Form onSubmit={(e) => handleSubmit(e)}>

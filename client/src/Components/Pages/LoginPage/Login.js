@@ -4,10 +4,12 @@ import { useDispatch } from "react-redux";
 import { useHistory } from "react-router-dom";
 import { login } from "../../../Services/userService";
 import Background from "../../Background";
+import AgileBoardLogo from "../../../Images/agileboard12.svg";
+
 import {
   BgContainer,
   Container,
-  TrelloIconContainer,
+  AgileBoardIconContrainer,
   FormSection,
   FormCard,
   Form,
@@ -28,8 +30,8 @@ const Login = () => {
   });
 
   useEffect(() => {
-    document.title = "Log in to Trello Clone"
-  }, [])
+    document.title = "Log in to Agile Board";
+  }, []);
   const handleSubmit = (e) => {
     e.preventDefault();
     login(userInformations, dispatch);
@@ -40,13 +42,13 @@ const Login = () => {
         <Background />
       </BgContainer>
       <Container>
-        <TrelloIconContainer onClick={() => history.push("/")}>
-          <Icon src="https://d2k1ftgv7pobq7.cloudfront.net/meta/c/p/res/images/trello-header-logos/167dc7b9900a5b241b15ba21f8037cf8/trello-logo-blue.svg" />
-        </TrelloIconContainer>
+        <AgileBoardIconContrainer onClick={() => history.push("/")}>
+          <Icon src={AgileBoardLogo} />
+        </AgileBoardIconContrainer>
         <FormSection>
           <FormCard>
             <Form onSubmit={(e) => handleSubmit(e)}>
-              <Title>Log in to Trello</Title>
+              <Title>Log in to AgileBoard</Title>
               <Input
                 type="email"
                 placeholder="Enter email"

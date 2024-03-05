@@ -2,7 +2,7 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 import styled from "styled-components";
 import { lg } from "../BreakPoints";
-import trelloLogo from "../Images/trello-logo.svg";
+import AgileBoardLogo from "../Images/agileboard12.svg";
 const Container = styled.nav`
   position: fixed;
   top: 0;
@@ -17,7 +17,7 @@ const Container = styled.nav`
   z-index: 100;
 
   ${lg({
-    justifyContent: "space-between",    
+    justifyContent: "space-between",
   })}
 `;
 
@@ -46,7 +46,7 @@ const Button = styled.button`
   padding: 0.5rem 1rem;
   color: white;
   border: none;
-  cursor: pointer;  
+  cursor: pointer;
   &:hover {
     background-color: #0952cc;
   }
@@ -56,10 +56,10 @@ const IndexNav = () => {
   let history = useHistory();
   return (
     <Container>
-      <Icon src={trelloLogo} />
+      <Icon src={AgileBoardLogo} />
       <RightSide>
-        <Link onClick={()=>history.push("/login")}>Log in</Link>
-        <Button onClick={()=>history.push("/register")}>Sign up</Button>
+        <Link onClick={() => history.push("/login")}>Log in</Link>
+        <Button onClick={() => history.push("/register")}>Sign up</Button>
       </RightSide>
     </Container>
   );
